@@ -7,6 +7,6 @@ think more. write more
 
 > 博客主要由时间划分
 #### 2018年01月
-+ [我的第一篇博文](https://github.com/zenghangyu/blog/projects/1) <br>
++ [我的第一篇博文](https://github.com/zenghangyu/blog/issues/1) <br>
 + [关于table中列宽调整无效问题](https://github.com/zenghangyu/blog/issues/2)
  
