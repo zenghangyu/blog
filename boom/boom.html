@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        #warp {
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+        
+        .wp {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="warp">
+
+    </div>
+    <script>
+        /**
+         * 获取容器id：warp
+         * 声明变量wps为子粒子总和
+         * 声明变量n 子粒子行数列数
+         * x,y为运动轨迹数组
+         * **/
+        var warp = document.getElementById('warp'),
+            wps,
+            n = 8,
+            x = [],
+            y = [];
+        for (var i = -n; i < n; i++) {
+            for (var j = -n; j < n; j++) {
+                var div = document.createElement('div');
+                div.className = "wp";
+                div.style.left = j * 10 + "px";
+                div.style.top = i * 10 + "px";
+                warp.appendChild(div);
+                wps = warp.getElementsByTagName('div');
+                div.onclick = function() {
+                    boom();
+                    for (var i = 0; i < 4 * n * n; i++) {
+                        wps[i].onclick = null;
+                        x[i] = i % (2 * n) - n + Math.random() * 10 - 5;
+                        y[i] = (i - i % (2 * n)) / (2 * n) - n + Math.random() * 10 - 5;
+                    }
+                }
+            }
+        }
+
+        function boom() {
+            for (var i = 0; i < 4 * n * n; i++) {
+                wps[i].style.left = (wps[i].offsetLeft + x[i]) + "px";
+                wps[i].style.top = (wps[i].offsetTop + y[i]) + "px";
+            }
+            setTimeout(function() {
+                boom();
+            }, 1);
+        }
+    </script>
+</body>
+
+</html>
