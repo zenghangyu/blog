@@ -10,3 +10,4 @@ think more. write more
 + [我的第一篇博文](https://github.com/zenghangyu/blog/issues/1) <br>
 + [关于table中列宽调整无效问题](https://github.com/zenghangyu/blog/issues/2)
 + [制作粒子爆炸效果](https://github.com/zenghangyu/blog/issues/3)
++ [javascript之惰性函数](https://github.com/zenghangyu/blog/issues/4)
