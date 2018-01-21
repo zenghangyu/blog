@@ -15,3 +15,4 @@ think more. write more
 > javascript系列
 + [javascript之惰性函数](https://github.com/zenghangyu/blog/issues/4)
 + [javascript之立即执行函数](https://github.com/zenghangyu/blog/issues/5)
++ [JavaScript之Arguments对象暂存函数参数与属性 ](https://github.com/zenghangyu/blog/issues/6)
