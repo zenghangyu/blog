@@ -27,3 +27,4 @@ think more. write more
 
 #### 2018年03月
 + [Vue学习笔记(1)](https://github.com/zenghangyu/blog/issues/12)
++ [debounce（防抖）和throttle（节流）](https://github.com/zenghangyu/blog/issues/13)
