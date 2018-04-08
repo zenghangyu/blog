@@ -30,3 +30,6 @@ think more. write more
 + [debounce（防抖）和throttle（节流）](https://github.com/zenghangyu/blog/issues/13)
 + [Vue学习笔记(2)](https://github.com/zenghangyu/blog/issues/14)
 + [JavaScript之数组的位置方法 ](https://github.com/zenghangyu/blog/issues/15)
+
+#### 2018年04月
++ [JavaScript之订阅发布模式](https://github.com/zenghangyu/blog/issues/16)
